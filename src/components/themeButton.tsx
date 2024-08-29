@@ -23,7 +23,7 @@ export default function ThemeButton() {
 
 	return (
 		<div className='flex-none'>
-			<div role='button' className={'btn btn-ghost btn-circle'}>
+			<div role='button' className='btn btn-ghost btn-circle'>
 				<button className='navbar-end' onClick={handleChangeTheme}>
 					<i className={'bi-' + (theme ? 'brightness-high' : 'moon-stars') + '-fill'} style={{ fontSize: 1 + 'rem' }} />
 				</button>

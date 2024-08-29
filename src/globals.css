@@ -7,3 +7,11 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
+h1 {
+  font-size: xx-large;
+  letter-spacing: 2.5px;
+  word-spacing: 2.5px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
