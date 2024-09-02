@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import '@/globals.css';
 import Navbar from '@/components/navbar';
 import Link from 'next/link';
-//import GradientMesh from '@/components/gradient';
+import GradientMesh from '@/components/gradient';
 import Footer from '@/components/footer';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,7 +26,7 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <div style={{ position: 'relative' }}>
-          {/*<GradientMesh />*/}
+          <GradientMesh />
 
           <div style={{ position: 'relative', zIndex: 0 }}>
             <Navbar />
