@@ -27,6 +27,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <div style={{ position: 'relative' }}>
           {/*<GradientMesh />*/}
+          <div className='fixed top-0'>
+            <canvas className='h-screen w-screen animated-background' />
+          </div>
 
           <div style={{ position: 'relative', zIndex: 0 }}>
             <Navbar />

@@ -24,7 +24,26 @@ h1 {
   border: 1px solid rgba(87, 87, 87, 0.100);
 }
 
-@layer components {
+.animated-background {
+  background: linear-gradient(
+    to right, #1a1a1a, #3f2828, #491f1f);
+  background-size: 400% 400%;
+  animation: animate-background 20s infinite ease-in-out;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/*@layer components {
   #gradient-canvas {
     width: 100%;
     height: 100%;
@@ -35,7 +54,7 @@ h1 {
   }
 }
 
-/* Gradient mesh per light theme
+// Gradient mesh per light theme
 #gradient-canvas {
   width: 100%;
   height: 100%;

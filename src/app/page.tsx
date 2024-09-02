@@ -3,9 +3,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 export default function Home() {
   return (
     <>
-      <h1>
-        Home - Sono Batta.
-      </h1>
+      <h1>Ciao, sono Filippo.</h1>
     </>
   );
 }

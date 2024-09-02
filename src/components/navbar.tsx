@@ -35,7 +35,7 @@ export default function Navbar() {
 
         {/* Implementare la funzione per riconoscere il tema applicato attualmente dal sistema ospite */}
         {/* Fare in modo che il bottone cambi il valore di prefers-color-scheme invece che solo il CSS */}
-        <div className='md:ml-6 m-2'>
+        <div className='md:ml-2 m-2'>
           <label className='swap swap-rotate btn-ghost btn-circle'>
             <input type='checkbox' className='theme-controller' value='light' />
             <i className='bi-brightness-high swap-on' />
