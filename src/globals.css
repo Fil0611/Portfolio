@@ -14,3 +14,32 @@ h1 {
   word-spacing: 2.5px;
   font-weight: bold;
 }
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(87, 87, 87, 0.13);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(87, 87, 87, 0.100);
+}
+
+#gradient-canvas {
+  width: 100%;
+  height: 100%;
+  --gradient-color-1: #000000;
+  --gradient-color-2: #271c1c;
+  --gradient-color-3: #371616;
+  --gradient-color-4: #480505;
+}
+
+/* Gradient mesh per light theme
+#gradient-canvas {
+  width: 100%;
+  height: 100%;
+  --gradient-color-1: #808080; 
+  --gradient-color-2: #a79c9c; 
+  --gradient-color-3: #b79696;  
+  --gradient-color-4: #c68686;
+}
+*/
