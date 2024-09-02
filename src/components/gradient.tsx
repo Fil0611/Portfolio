@@ -1,13 +1,13 @@
 'use client'
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Gradient } from '@/Gradient.js';
+import { Gradient } from '@/gradient';
 import { useEffect } from 'react';
 
 export default function GradientMesh() {
   useEffect(() => {
-    const gradient = new Gradient()
-    gradient.initGradient('#gradient-canvas')
+    const gradient = new Gradient();
+    gradient.initGradient('#gradient-canvas');
   }, []);
 
   return (

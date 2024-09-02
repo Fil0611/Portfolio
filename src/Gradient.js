@@ -250,6 +250,7 @@ class MiniGl {
         value: 1
       })
     }
+    e(this, "frame", 0);
   }
   setSize(e = 640, t = 480) {
     this.width = e, this.height = t, this.canvas.width = e, this.canvas.height = t, this.gl.viewport(0, 0, e, t), this.commonUniforms.resolution.value = [e, t], this.commonUniforms.aspectRatio.value = e / t, this.debug("MiniGL.setSize", {
@@ -301,6 +302,7 @@ class Gradient {
 
       }
       if (0 !== this.last && this.isStatic) return this.minigl.render(), void this.disconnect();
+      this.frame += 1;
       (/*this.isIntersecting && */this.conf.playing || this.isMouseDown) && requestAnimationFrame(this.animate)
     }), e(this, "addIsLoadedClass", () => {
           /*this.isIntersecting && */!this.isLoadedClass && (this.isLoadedClass = !0, this.el.classList.add("isLoaded"), setTimeout(() => {
@@ -455,7 +457,7 @@ class Gradient {
     this.material = this.initMaterial(), this.geometry = new this.minigl.PlaneGeometry, this.mesh = new this.minigl.Mesh(this.geometry, this.material)
   }
   shouldSkipFrame(e) {
-    return !!window.document.hidden || (!this.conf.playing || (parseInt(e, 10) % 2 == 0 || void 0))
+    return !!window.document.hidden || (!this.conf.playing || (this.frame % 2 == 0 || void 0))
   }
   updateFrequency(e) {
     this.freqX += e, this.freqY += e
