@@ -1,7 +1,7 @@
 'use client'
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Gradient } from '../gradient.js';
+import { Gradient } from '../gradient';
 import { useEffect } from 'react';
 
 export default function GradientMesh() {
