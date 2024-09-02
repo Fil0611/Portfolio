@@ -2,7 +2,9 @@
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useEffect } from 'react';
-import Gradient from './gradient/index.js';
+
+/// <reference path="./gradient/gradient.d.ts" />
+import Gradient from './gradient/gradient';
 
 export default function GradientMesh() {
   useEffect(() => {

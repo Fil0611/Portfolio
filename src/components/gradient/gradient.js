@@ -519,4 +519,4 @@ class Gradient {
 */
 
 //export { Gradient }
-exports.Gradient = Gradient;
+exports.default = Gradient;
