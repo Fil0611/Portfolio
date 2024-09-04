@@ -9,12 +9,24 @@
 }
 
 h1 {
-  font-size: xx-large;
+  font-size: 3vw;
   letter-spacing: 2.5px;
   word-spacing: 2.5px;
   font-weight: bold;
 }
 
+@media (max-width : 640px) {
+  h1 {
+    font-size: 4vw;
+  }
+}
+
+.social-text {
+  font-size: medium;
+  font-weight: bolder;
+}
+
+/* Glass Element */
 .glass {
   /* From https://css.glass */
   background: rgba(87, 87, 87, 0.13);
@@ -24,9 +36,26 @@ h1 {
   border: 1px solid rgba(87, 87, 87, 0.100);
 }
 
+/* Gradient Text */
+.gradient-text {
+  font-size: 8vw;
+  font-weight: bold;
+  background: linear-gradient(90deg, #b2385d, #fd6e4a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-background 5s infinite ease-in-out
+}
+
+@media (max-width : 640px) {
+  .gradient-text {
+    font-size: 9vw;
+  }
+}
+
+/* Animated Background */
 .animated-background {
-  background: linear-gradient(
-    to right, #1a1a1a, #3f2828, #491f1f);
+  background: linear-gradient(to right, #131313, #2c1d1d, #362222);
   background-size: 400% 400%;
   animation: animate-background 20s infinite ease-in-out;
 }
@@ -35,9 +64,11 @@ h1 {
   0% {
     background-position: 0 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0 50%;
   }

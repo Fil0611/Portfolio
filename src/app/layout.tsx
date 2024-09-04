@@ -2,8 +2,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@/globals.css';
 import Navbar from '@/components/navbar';
-import Link from 'next/link';
-import GradientMesh from '@/components/gradientMesh';
 import Footer from '@/components/footer';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,7 +24,6 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <div style={{ position: 'relative' }}>
-          {/*<GradientMesh />*/}
           <div className='fixed top-0'>
             <canvas className='h-screen w-screen animated-background' />
           </div>
@@ -34,7 +31,7 @@ export default function RootLayout({
           <div style={{ position: 'relative', zIndex: 0 }}>
             <Navbar />
 
-            <div className='m-10 h-screen'>
+            <div className='mx-20 mt-12 h-svh'>
               {children}
             </div>
 
