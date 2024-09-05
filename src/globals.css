@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap'); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +14,12 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+.default-font {
+  font-family: 'Rethink Sans';
+}
+
 h1 {
+  font-family: 'Rethink Sans';
   font-size: 3vw;
   letter-spacing: 2.5px;
   word-spacing: 2.5px;
@@ -21,7 +32,15 @@ h1 {
   }
 }
 
+.navbar-text {
+  font-family: 'Rethink Sans';
+  font-size: 16px;
+  font-weight: 900;
+}
+
+/* Text for Socials Buttons */
 .social-text {
+  font-family: 'Rethink Sans';
   font-size: medium;
   font-weight: bolder;
 }
@@ -38,9 +57,11 @@ h1 {
 
 /* Gradient Text */
 .gradient-text {
+  font-family: 'Rethink Sans';
+  letter-spacing: 0.5vw;
   font-size: 8vw;
   font-weight: bold;
-  background: linear-gradient(90deg, #b2385d, #fd6e4a);
+  background: linear-gradient(to right, #b2385d, #fd6e4a);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

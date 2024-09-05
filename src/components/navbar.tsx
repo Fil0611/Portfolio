@@ -16,8 +16,8 @@ export default function Navbar() {
             </ul>
           </div>
 
-          <Link className='btn btn-ghost rounded-full m-2 text-md hover:shadow-xl hover:bg-neutral-900 dark:hover:bg-neutral-200 hover:text-neutral-200 dark:hover:text-neutral-900' href={'/'}>
-            <b><b>Filippo Battaglin</b></b>
+          <Link className='btn btn-ghost rounded-full navbar-text m-2 text-md hover:shadow-xl hover:bg-neutral-900 dark:hover:bg-neutral-200 hover:text-neutral-200 dark:hover:text-neutral-900' href={'/'}>
+            Filippo Battaglin
           </Link>
         </div>
       </div>
@@ -27,9 +27,9 @@ export default function Navbar() {
       <div className='glass rounded-full shadow-2xl'>
         <div className='hidden md:flex'>
           <ul tabIndex={0} className='menu menu-horizontal'>
-            <li className='pr-1'><Link className='btn btn-ghost rounded-full hover:shadow-xl' href={'/about'}>Su di Me</Link></li>
-            <li className='px-1'><Link className='btn btn-ghost rounded-full hover:shadow-xl' href={'/projects'}>I Miei Progetti</Link></li>
-            <li className='pl-1'><Link className='btn btn-ghost rounded-full hover:shadow-xl btn-outline w-40 flex-auto' href={'/contacts'}>Contattami</Link></li>
+            <li className='pr-1'><Link className='btn btn-ghost rounded-full navbar-text hover:shadow-xl' href={'/about'}>Su di Me</Link></li>
+            <li className='px-1'><Link className='btn btn-ghost rounded-full navbar-text hover:shadow-xl' href={'/projects'}>I Miei Progetti</Link></li>
+            <li className='pl-1'><Link className='btn btn-ghost rounded-full navbar-text hover:shadow-xl btn-outline w-40 flex-auto' href={'/contacts'}>Contattami</Link></li>
           </ul>
         </div>
 
