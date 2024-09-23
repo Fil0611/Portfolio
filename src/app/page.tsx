@@ -1,6 +1,6 @@
 import GradientText from '@/components/gradientText';
 import SocialLink from '@/components/socialLink';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import { MarkGithubIcon } from '@primer/octicons-react';
 
 export default function Home() {
   return (
@@ -14,8 +14,8 @@ export default function Home() {
         <div className='divider' />
       </div>
       <div className='grid grid-flow-col grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-5'>
-        <SocialLink icon={'linkedin'} text={'Linkedin'} url={'https://www.linkedin.com/in/filippo-battaglin-691002207/'} />
-        <SocialLink icon={'github'} text={'GitHub'} url={'https://github.com/Fil0611'} />
+        <SocialLink icon={<MarkGithubIcon />} text={'Linkedin'} url={'https://www.linkedin.com/in/filippo-battaglin-691002207/'} />
+        <SocialLink icon={<MarkGithubIcon />} text={'GitHub'} url={'https://github.com/Fil0611'} />
       </div>
     </>
   );

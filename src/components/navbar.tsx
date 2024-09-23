@@ -1,13 +1,17 @@
 import Link from 'next/link';
+import { SunIcon, MoonIcon, QuoteIcon } from '@primer/octicons-react';
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
-    <div className='navbar px-7 py-5 mt-3 sticky top-3'>
+    <div className='navbar px-7 py-5 sticky top-3'>
       <div className='glass rounded-full shadow-2xl'>
         <div>
           <div className='dropdown dropdown-start'>
-            <div tabIndex={0} role='button' className='btn btn-ghost btn-circle m-2 md:hidden'>
-              <i className='bi-list text-md' />
+            <div tabIndex={0} role='button' className='btn btn-ghost btn-circle mx-2 md:hidden'>
+              <div> {/* evidentemente serve per allinearlo verticalmente al centro rispetto al testo */}
+                <QuoteIcon verticalAlign='text-top' />
+              </div>
             </div>
             <ul tabIndex={0} className='dropdown-content menu menu-sm bg-base-200 z-[1] p-3 rounded-box shadow'>
               <li><Link className='btn btn-ghost w-40 flex-auto' href={'/about'}>Su di Me</Link></li>
@@ -38,8 +42,8 @@ export default function Navbar() {
         <div className='md:ml-2 m-2'>
           <label className='swap swap-rotate btn-ghost btn-circle'>
             <input type='checkbox' className='theme-controller' value='light' />
-            <i className='bi-brightness-high swap-on' />
-            <i className='bi-moon-stars swap-off' />
+            <SunIcon className='swap-on' />
+            <MoonIcon className='swap-off' />
           </label>
         </div>
       </div>

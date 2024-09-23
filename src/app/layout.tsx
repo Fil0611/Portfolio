@@ -6,8 +6,6 @@ import Footer from '@/components/footer';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
   title: 'Filippo Battaglin',
   description: 'Portfolio personale di Filippo Battaglin',
@@ -24,7 +22,7 @@ export default function RootLayout({
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </head>
 
-      <body className={inter.className}>
+      <body>
         <div style={{ position: 'relative' }}>
           <div className='fixed top-0'>
             <canvas className='h-screen w-screen animated-background' />
@@ -33,7 +31,7 @@ export default function RootLayout({
           <div style={{ position: 'relative', zIndex: 0 }}>
             <Navbar />
 
-            <div className='mx-20 mt-12 h-svh'>
+            <div className='mx-20 h-svh'>
               {children}
               <SpeedInsights />
               <Analytics />

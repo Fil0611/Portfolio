@@ -1,63 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap'); */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* FONT PERSONALIZZATI */
+@font-face {
+  font-family: 'Rethink Sans';
+  src: local('Rethink Sans'), url('../public/fonts/RethinkSans-VariableFont_wght.ttf'), format('truetype');
 }
 
-.default-font {
+/* COMPONENTI */
+body {
   font-family: 'Rethink Sans';
 }
 
 h1 {
-  font-family: 'Rethink Sans';
+  color: #d5d7dc;
   font-size: 3vw;
   letter-spacing: 2.5px;
   word-spacing: 2.5px;
   font-weight: bold;
 }
-
 @media (max-width : 640px) {
   h1 {
     font-size: 4vw;
   }
 }
 
+/* CLASSI */
 .navbar-text {
-  font-family: 'Rethink Sans';
+  color: #d5d7dc;
+  letter-spacing: 0.5px;
   font-size: 16px;
   font-weight: 900;
 }
 
-/* Text for Socials Buttons */
 .social-text {
-  font-family: 'Rethink Sans';
   font-size: medium;
   font-weight: bolder;
 }
 
-/* Glass Element */
 .glass {
   /* From https://css.glass */
   background: rgba(87, 87, 87, 0.13);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(87, 87, 87, 0.100);
+  border: 1px solid rgba(87, 87, 87, 0.25);
 }
 
-/* Gradient Text */
+.glass-box {
+  background: rgba(87, 87, 87, 0.13);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(87, 87, 87, 0.25);
+}
+
 .gradient-text {
-  font-family: 'Rethink Sans';
   letter-spacing: 0.5vw;
   font-size: 8vw;
   font-weight: bold;
@@ -67,20 +64,17 @@ h1 {
   -webkit-text-fill-color: transparent;
   animation: animate-background 5s infinite ease-in-out
 }
-
 @media (max-width : 640px) {
   .gradient-text {
     font-size: 9vw;
   }
 }
 
-/* Animated Background */
 .animated-background {
   background: linear-gradient(to right, #131313, #2c1d1d, #362222);
   background-size: 400% 400%;
   animation: animate-background 20s infinite ease-in-out;
 }
-
 @keyframes animate-background {
   0% {
     background-position: 0 50%;
